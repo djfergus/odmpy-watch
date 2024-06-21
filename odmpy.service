@@ -1,0 +1,18 @@
+Description=odmpy file processing
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/root/command.sh
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=odmpy
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
+~                                                                               
+~                                                                               
+~               
